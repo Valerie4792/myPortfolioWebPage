@@ -13,7 +13,7 @@ const About = () => {
           <Col md={7}>
             <h1 className="about">ABOUT</h1>
             <div className="aboutLine"></div>
-            <p className="aboutBold m-0 p-0">I'm {"<VALERIE/>"},</p>
+            <p className="aboutBold m-0 p-0">I'm <span style={{color: "white"}}>{"<VALERIE/>"}</span>,</p>
             <p className="aboutBold m-0 p-0">a junior front-end developer.</p>
             <p className="aboutReg">
               I create websites and apps that are practical, playful, and fun
@@ -23,10 +23,12 @@ const About = () => {
           <Col md={5}>
             <Image src={helloPic} className="aboutPic" />
           </Col>
-        </Row>
+        </Row> 
         <Row>
           <Col className="arrowDwnBtn mx-5">
-          <Image src={arrowDwn} />
+
+         <Image src={arrowDwn} />
+          
         </Col>   
         </Row>
        
