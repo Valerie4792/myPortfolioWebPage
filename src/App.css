@@ -31,7 +31,7 @@ body, html{
   padding-left: 20px;
   font-family: Radio Canada;
   font-weight: 800;
-  font-size: 45px;
+  font-size: 40px;
   color: white;
   display: flex;
   align-items: flex-end;
@@ -126,21 +126,20 @@ body, html{
   margin-left: 5rem;
 }
 .containerHomeBg{
-  background-image: url('/src/assets/bgimages/homeBG.png'); /* Set the path to your background image */
-  background-size: cover; /* Adjust the background size as needed */
-  width: auto;
-  height: auto;
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-attachment: fixed; 
+  background-image: url('/src/assets/bgimages/homeBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 .arrowDwnBtn{
   display: flex;
   justify-content: end;
   height: 60px;
   width: 60px;
-  margin: 1rem;
+  margin: 0rem;
 
 }
 .aboutBG{
@@ -173,3 +172,23 @@ body, html{
   color: #3c5126;
   margin-bottom: 5rem;
 }
+
+.projectsHeader{
+  font-family: Radio Canada;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 60px;
+  margin-left: 3rem;
+  color: white;
+
+}
+.projectLine{
+  border-top: 8px solid white; /* Adjust thickness as needed */
+  width: 15%; /* Adjust width as needed */
+  margin-top: 0;
+  margin-left: 3rem;
+  padding-bottom: 3rem;
+
+}
+
+

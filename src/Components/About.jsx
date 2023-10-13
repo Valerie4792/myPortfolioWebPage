@@ -3,10 +3,16 @@ import { Container, Image, Row, Col, Button } from "react-bootstrap";
 import Nav1 from "./Nav1";
 import helloPic from "/src/assets/bgimages/helloPic.png";
 import arrowDwn from "/src/assets/bgimages/arrowDwn.png";
+import { useNavigate } from 'react-router-dom';
+
 
 const About = () => {
+  let navigate = useNavigate();
+const handleSubmit = () =>{
+  navigate("/Projects")
+}
   return (
-    <div className="aboutBG">
+   
       <Container-Fluid>
         <Nav1 />
         <Row style={{ margin: 100 }}>
@@ -25,14 +31,15 @@ const About = () => {
           <Col md={5}>
             <Image src={helloPic} className="aboutPic" />
           </Col>
-        </Row>
-        <Row>
+          <Row>
           <Col className="arrowDwnBtn mx-5">
-            <Image src={arrowDwn} />
+            <Image onClick={handleSubmit} src={arrowDwn} />
           </Col>
         </Row>
+        </Row>
+        
       </Container-Fluid>
-    </div>
+ 
   );
 };
 

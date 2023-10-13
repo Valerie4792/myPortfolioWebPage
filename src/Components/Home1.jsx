@@ -1,12 +1,17 @@
 import React from "react";
 import { Container, Image, Row, Col, Button } from "react-bootstrap";
-import lampImg from "/src/assets/bgimages/lamp.png";
+import { useNavigate } from 'react-router-dom';
 import Nav1 from "./Nav1";
 import arrowDwn from "/src/assets/bgimages/arrowDwn.png"
 import homeBG from "/src/assets/bgimages/homeBG.png"
 
 
 const Home1 = () => {
+let navigate = useNavigate();
+const handleSubmit = () =>{
+  navigate("/about")
+}
+
   return (
     
     <div className="containerHomeBg m-0 p-0">
@@ -42,7 +47,7 @@ const Home1 = () => {
     <Button className='ml-4 navContactBtn'>Contact</Button>
     </Col>
     <Col className="arrowDwnBtn">
-    <Image src={arrowDwn} />
+    <Image onClick={handleSubmit} src={arrowDwn} />
     </Col>
    
         
