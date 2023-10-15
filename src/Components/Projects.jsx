@@ -11,8 +11,9 @@ import Top10 from "../assets/Proj/Top10.png";
 import WeatherApp from "../assets/Proj/WeatherApp.png";
 import { useNavigate } from 'react-router-dom';
 import arrowDwn from "/src/assets/bgimages/arrowDwn.png";
+import ImageCarousel from './ImageCarousel';
 
-
+const images = [{image: DealNoDeal, description: 'mario themed Deal or No Deal game built in Unity using C# language'}, {image: DadJokes, description: 'simple project written in js, pulls dad jokes from a pre-built api, Simpson themed'},{image:DigitalClock, description: "digital clock built in Unity, written in C#, Adventure Time Themed"},{image:MagicEightBall, description: "magic 8 ball game built in Unity, c#, Bob's Burger Theme"}, {image:SimpleCalc, description: "Hello Kitty themed simple calculator using JS"}, {image:ToDoList, description: "To do list built using JS and VS code. Themed like old Type Writer"}, {image:Top10, description: "Adam Sandler Top 10 movie website"}, {image:WeatherApp, description: "Weather App built using JS, pulls data from a weather api"}]
 
 
 const Projects = () => {
@@ -28,97 +29,9 @@ const Projects = () => {
 
       <h1 className="projectsHeader">PROJECTS</h1>
       <div className="projectLine"></div>
-      {/* <Carousel fade className="mt-5">
-      <Carousel.Item className="d-flex justify-content-center">
-        <DealNoDeal text="First slide" />
-    
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-       
-        
-    
-        
-    
-      
-      </Carousel.Item>
-      <Carousel.Item>
- <DigitalClock text="Second slide" />
-        <Carousel.Caption>
-       
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <MagicEightBall text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <SimpleCalc text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <ToDoList text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Top10 text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <WeatherApp text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <DadJokes text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <MagicEightBall text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>   
-   
-   
-     */}
-      <Col className="arrowDwnBtn mx-5">
+
+<ImageCarousel images={images} />
+      <Col className="arrowDwnBtn">
             <Image onClick={handleSubmit} src={arrowDwn} />
       </Col>
     </Container>

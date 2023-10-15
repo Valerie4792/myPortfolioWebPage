@@ -6,11 +6,13 @@
   font-family: Radio Canada;
 
 
+
 }
 .navContactBtn:hover{
   background-color: #647c6f;
   border-color: #395245;
   font-family: Radio Canada;
+
 }
 
 body, html{
@@ -139,7 +141,7 @@ body, html{
   justify-content: end;
   height: 60px;
   width: 60px;
-  margin: 0rem;
+  margin: 80px;
 
 }
 .aboutBG{
@@ -189,6 +191,21 @@ body, html{
   margin-left: 3rem;
   padding-bottom: 3rem;
 
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  max-width: 600px; /* Adjust the maximum width of the carousel */
+  margin: 0 auto;
+}
+
+.description-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
 }
 
 
